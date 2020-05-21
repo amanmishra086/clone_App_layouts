@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+  <ImageView
+
+      android:id="@+id/menuIcon"
+      android:layout_width="75dp"
+      android:layout_height="50dp"
+
+      android:layout_marginStart="3dp"
+
+      android:layout_marginTop="8dp"
+
+      android:scaleType="centerInside"
+
+      android:src="@drawable/group_10538"
+
+       />
+
+
+
+  <TextView
+
+      android:id="@+id/textView"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:gravity="center"
+
+
+      android:layout_marginTop="13dp"
+
+      android:text="Match Booster"
+
+      android:textColor="@android:color/white"
+
+      android:textSize="25sp"
+
+      android:textStyle="bold"
+
+       />
+
+
+
+
+
+  <ImageView
+
+      android:id="@+id/message"
+
+      android:layout_width="40dp"
+
+      android:layout_height="40dp"
+
+      android:layout_marginTop="8dp"
+
+      android:layout_marginEnd="8dp"
+
+      android:scaleType="fitXY"
+
+      android:src="@drawable/seo_and_web"
+
+       />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@drawable/bgshape"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginBottom="130dp"
+      android:layout_marginTop="70dp">
+
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:orientation="vertical"
+          android:background="@drawable/group_10602"
+          android:gravity="center">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Have Time to Login?"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Match Booster and express Likes"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="automatically"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upgrade to Premium"
+            android:textColor="@color/yellow"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+
+
+      </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How it Works"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_check_black_24px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setup your match booster with desired match criteria."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_check_black_24px"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Using this data we will be sending likes to new and desired matches everyday."
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="40dp"
+          android:textColor="@color/white"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_check_black_24px"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Setup and forget, Leave the rest to us. "
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="40dp"
+          android:textColor="@color/white"/>
+
+    </RelativeLayout>
+  </LinearLayout>
+
+
+  <com.example.layoutexamples.CurvedBottomNavigationView
+      android:layout_width="match_parent"
+      android:id="@+id/nav_id"
+
+      android:labelFor="@+id/nav_id"
+      android:layout_height="52dp"
+      android:background="@drawable/nav_bg"
+      app:menu="@menu/nav_menu"
+
+      android:backgroundTint="@android:color/white"
+
+      app:itemIconTint="@android:color/holo_red_dark"
+
+      app:itemTextColor="@android:color/holo_red_dark"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true" />
+
+  <ImageView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:onClick="onClick"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/group_10503"
+      android:layout_alignParentBottom="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>
